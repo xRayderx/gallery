@@ -1,0 +1,63 @@
+:root{
+	--radius: 5px;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lucida Console';
+	font-size: 1.6rem;
+	color: #C5C6C7;
+	background-color: #1F2833;
+	text-transform: uppercase;
+}
+
+/* Titulos */
+
+.heading{
+	margin: 2rem .25rem;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.heading span{
+	display: block;
+}
+
+.name{
+	padding: 25px;
+	margin: 5rem 0 1rem;
+	text-align: center;
+}
+
+/* Grilla */
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-auto-rows: 10rem;
+	gap: .25rem;
+	margin: 1rem;
+}
+
+.img-responsive{
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	transition: 300ms ease-out;
+}
+
+.img-responsive:hover{
+	transform: scale(1.2);
+}
+
+div{
+	overflow: hidden;
+	border-radius: var(--radius);
+	box-shadow: 0.3rem 0.4rem 0.4rem rgb(0 0 0 / 40%);
+}
